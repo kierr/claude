@@ -1,10 +1,7 @@
-# Claude Code Plugins - Telephone Book
+# Claude Code Plugins
 
-Minimal registry for Claude Code plugins by Kierr.
+## Install
 
-## Installation
-
-Add this telephone book:
 ```bash
 /plugin marketplace add https://github.com/kierr/claude
 ```
