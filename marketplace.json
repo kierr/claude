@@ -1,0 +1,32 @@
+{
+  "name": "kierr",
+  "owner": {
+    "name": "Kierr"
+  },
+  "plugins": [
+    {
+      "name": "docs",
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-docs"
+      },
+      "description": "Access official Claude Code documentation via slash commands"
+    },
+    {
+      "name": "memory",
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-memory"
+      },
+      "description": "Track tool usage and extract session memories at configurable thresholds"
+    },
+    {
+      "name": "trunk",
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-trunk"
+      },
+      "description": "Advanced Trunk integration for automated code quality and workflow automation"
+    }
+  ]
+}
