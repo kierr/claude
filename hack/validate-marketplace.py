@@ -85,13 +85,13 @@ def validate_plugin(plugin, index):
             if "url" in author and not isinstance(author["url"], str):
                 errors.append(f"{prefix}.author.url: must be a string")
 
-    # Validate source field
+    # Validate source field - Claude CLI requires local paths starting with "./"
     if "source" in plugin:
         source = plugin["source"]
         if not isinstance(source, str):
-            errors.append(f"{prefix}.source: must be a string (URL or path)")
-        elif not (source.startswith("http://") or source.startswith("https://") or source.startswith("./") or source.startswith("/") or source == source.split("/")[-1]):
-            errors.append(f"{prefix}.source: should be a valid URL, relative path, or local path")
+            errors.append(f"{prefix}.source: must be a string (local path)")
+        elif not source.startswith("./"):
+            errors.append(f"{prefix}.source: must start with './' for local plugin paths")
 
     # Check for unrecognized fields (common mistakes)
     recognized_fields = {

@@ -70,10 +70,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
         "name": "plugin-command",
         "description": "Brief description of what this command does",
         "usage": "/plugin-command [args]",
-        "examples": [
-          "/plugin-command --help",
-          "/plugin-command --verbose"
-        ],
+        "examples": ["/plugin-command --help", "/plugin-command --verbose"],
         "parameters": [
           {
             "name": "verbose",
@@ -134,10 +131,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
         "optional": false
       }
     ],
-    "system": [
-      "node >= 18.0.0",
-      "git"
-    ],
+    "system": ["node >= 18.0.0", "git"],
     "external": [
       {
         "name": "openai-api",
@@ -198,11 +192,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
   },
 
   "security": {
-    "permissions": [
-      "read-files",
-      "write-files",
-      "network-access"
-    ],
+    "permissions": ["read-files", "write-files", "network-access"],
     "privacy": "Processes data locally, no external data transmission",
     "sandbox": "Runs in restricted environment",
     "verified": true
@@ -522,10 +512,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
         "optional": true
       }
     ],
-    "system": [
-      "node >= 16.0.0",
-      "git"
-    ]
+    "system": ["node >= 16.0.0", "git"]
   },
 
   "usage": {
@@ -629,10 +616,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
         "required": false
       }
     ],
-    "system": [
-      "python >= 3.9",
-      "pip"
-    ]
+    "system": ["python >= 3.9", "pip"]
   },
 
   "security": {
@@ -649,12 +633,14 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 1. Metadata Standards
 
 **Required Fields:**
+
 - `name`: Short, lowercase, hyphenated identifier
 - `version`: Semantic versioning (major.minor.patch)
 - `description`: One-sentence value proposition
 - `author`: Creator information with contact details
 
 **Recommended Fields:**
+
 - `displayName`: Human-readable name
 - `longDescription`: 2-3 paragraphs explaining value and use cases
 - `category` and `subcategory`: Proper categorization for discoverability
@@ -664,6 +650,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 2. Category System
 
 **Primary Categories:**
+
 - `Productivity`: Tools that enhance workflow efficiency
 - `Development`: Code-focused development tools
 - `AI/ML`: Artificial intelligence and machine learning tools
@@ -672,6 +659,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 - `Documentation`: Documentation and learning resources
 
 **Subcategories:**
+
 - Productivity: `Automation`, `Project Management`, `Time Tracking`
 - Development: `Tools`, `Testing`, `Debugging`, `Code Generation`
 - AI/ML: `Tools`, `Models`, `Data Processing`, `Analysis`
@@ -680,16 +668,19 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 3. Plugin Types
 
 **Command-Only Plugins:**
+
 - Focus on slash commands
 - Lightweight and fast
 - Ideal for simple utilities
 
 **Agent-Heavy Plugins:**
+
 - Emphasize specialized agents
 - Complex, multi-step operations
 - Best for analytical tasks
 
 **Mixed Component Plugins:**
+
 - Combine commands, agents, and skills
 - Most comprehensive approach
 - Suitable for complex workflows
@@ -697,12 +688,14 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 4. Security and Privacy
 
 **Security Best Practices:**
+
 - Clearly declare all required permissions
 - Use sandboxed execution when possible
 - Validate all inputs and outputs
 - Follow principle of least privilege
 
 **Privacy Considerations:**
+
 - Specify data handling practices
 - Offer offline-only modes when possible
 - Be transparent about external API usage
@@ -711,6 +704,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 5. Documentation Standards
 
 **Structure Requirements:**
+
 1. Clear value proposition in first paragraph
 2. Installation and setup instructions
 3. Usage examples for all components
@@ -718,6 +712,7 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 5. API documentation for developers
 
 **Example Quality:**
+
 - Realistic use cases
 - Copy-paste ready commands
 - Expected outputs shown
@@ -726,12 +721,14 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 6. Testing and Quality Assurance
 
 **Testing Requirements:**
+
 - Unit tests for all functions
 - Integration tests for workflows
 - End-to-end tests for user scenarios
 - Performance benchmarks
 
 **Quality Metrics:**
+
 - Code coverage > 80%
 - Documentation coverage 100%
 - No security vulnerabilities
@@ -740,11 +737,13 @@ This guide demonstrates comprehensive plugin definitions that showcase all avail
 ### 7. Version Management
 
 **Semantic Versioning:**
+
 - `MAJOR`: Breaking changes
 - `MINOR`: New features (backward compatible)
 - `PATCH`: Bug fixes (backward compatible)
 
 **Changelog Requirements:**
+
 - Date-stamped entries
 - Categorized changes (Added, Changed, Fixed, Removed)
 - Migration guides for breaking changes

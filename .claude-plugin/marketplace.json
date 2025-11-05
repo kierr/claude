@@ -21,7 +21,7 @@
         "email": "kierr@users.noreply.github.com",
         "url": "https://github.com/kierr"
       },
-      "source": "https://github.com/kierr/claude-docs.git",
+      "source": "./claude-docs",
       "homepage": "https://github.com/kierr/claude-docs",
       "license": "MIT",
       "keywords": [
@@ -43,7 +43,7 @@
         "email": "kierr@users.noreply.github.com",
         "url": "https://github.com/kierr"
       },
-      "source": "https://github.com/kierr/claude-memory.git",
+      "source": "./claude-memory",
       "homepage": "https://github.com/kierr/claude-memory",
       "license": "Apache-2.0",
       "keywords": [
@@ -65,7 +65,7 @@
         "email": "kierr@users.noreply.github.com",
         "url": "https://github.com/kierr"
       },
-      "source": "https://github.com/kierr/claude-trunk.git",
+      "source": "./claude-trunk",
       "homepage": "https://github.com/kierr/claude-trunk",
       "license": "MIT",
       "keywords": [
@@ -88,7 +88,7 @@
         "email": "kierr@users.noreply.github.com",
         "url": "https://github.com/kierr"
       },
-      "source": "https://github.com/kierr/claude-fs-mv.git",
+      "source": "./claude-fs-mv",
       "homepage": "https://github.com/kierr/claude-fs-mv",
       "license": "MIT",
       "keywords": [
@@ -110,7 +110,7 @@
         "email": "kierr@users.noreply.github.com",
         "url": "https://github.com/kierr"
       },
-      "source": "https://github.com/kierr/claude-rules.git",
+      "source": "./claude-rules",
       "homepage": "https://github.com/kierr/claude-rules",
       "license": "MIT",
       "keywords": [
