@@ -1,0 +1,129 @@
+{
+  "name": "docs",
+  "displayName": "Claude Code Documentation",
+  "version": "1.0.0",
+  "description": "Access official Claude Code documentation instantly with intelligent search and contextual help",
+  "longDescription": "The docs plugin provides seamless access to Claude Code's official documentation directly within your development environment. Features include intelligent search across all documentation, contextual suggestions based on your current work, quick access to common patterns and examples, and offline caching for frequently accessed content. Perfect for both beginners learning Claude Code and experienced developers needing quick reference.",
+
+  "author": {
+    "name": "Kierr",
+    "email": "kierr@example.com",
+    "url": "https://github.com/kierr",
+    "organization": "Claude Code Community"
+  },
+
+  "license": "MIT",
+  "homepage": "https://github.com/kierr/claude-docs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kierr/claude-docs.git"
+  },
+
+  "keywords": [
+    "claude-code",
+    "documentation",
+    "help",
+    "learning",
+    "reference",
+    "search",
+    "offline"
+  ],
+
+  "category": "Productivity",
+  "subcategory": "Documentation",
+
+  "tags": {
+    "primary": ["documentation", "claude-code"],
+    "secondary": ["help", "search", "reference"],
+    "stack": ["markdown", "typescript"],
+    "difficulty": "beginner",
+    "use-case": ["learning", "reference", "development"]
+  },
+
+  "components": {
+    "commands": [
+      {
+        "name": "docs-search",
+        "description": "Search Claude Code documentation",
+        "usage": "/docs-search <query>",
+        "examples": [
+          "/docs-search slash commands",
+          "/docs-search plugin development",
+          "/docs-search troubleshooting"
+        ],
+        "parameters": [
+          {
+            "name": "query",
+            "type": "string",
+            "description": "Search query",
+            "required": true
+          },
+          {
+            "name": "limit",
+            "type": "number",
+            "description": "Maximum number of results",
+            "required": false,
+            "default": 10
+          }
+        ]
+      },
+      {
+        "name": "docs-browse",
+        "description": "Browse documentation by topic",
+        "usage": "/docs-browse [topic]",
+        "examples": [
+          "/docs-browse",
+          "/docs-browse plugins",
+          "/docs-browse agents"
+        ]
+      }
+    ]
+  },
+
+  "installation": {
+    "type": "automatic",
+    "steps": [
+      "Download documentation package",
+      "Index content for search",
+      "Configure caching preferences",
+      "Validate installation"
+    ],
+    "configuration": {
+      "required": [],
+      "optional": ["CACHE_SIZE", "AUTO_UPDATE", "OFFLINE_MODE"],
+      "environment": [".docs-config"]
+    }
+  },
+
+  "usage": {
+    "quickStart": "Install with /plugin install docs@kierr and run /docs-search to find any topic",
+    "commonScenarios": [
+      "Learning Claude Code features and commands",
+      "Finding best practices and patterns",
+      "Troubleshooting common issues",
+      "Discovering new capabilities",
+      "Accessing help while coding"
+    ],
+    "examples": [
+      {
+        "title": "Find Plugin Development Guide",
+        "command": "/docs-search plugin development guide",
+        "expectedOutput": "Comprehensive guide to creating Claude Code plugins"
+      }
+    ]
+  },
+
+  "security": {
+    "permissions": ["network-access", "read-files"],
+    "privacy": "Cache documentation locally, no user data transmitted",
+    "sandbox": "Safe execution environment",
+    "verified": true
+  },
+
+  "support": {
+    "documentation": "https://github.com/kierr/claude-docs#readme",
+    "examples": "https://github.com/kierr/claude-docs/tree/main/examples",
+    "community": "https://github.com/kierr/claude-docs/discussions",
+    "issues": "https://github.com/kierr/claude-docs/issues"
+  }
+}

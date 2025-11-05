@@ -1,0 +1,687 @@
+{
+  "name": "kierr",
+  "displayName": "Kierr's Plugin Collection",
+  "owner": {
+    "name": "Kierr",
+    "email": "kierr@example.com",
+    "url": "https://github.com/kierr",
+    "organization": "Claude Code Community"
+  },
+  "description": "Curated collection of high-quality Claude Code plugins for enhanced productivity and development workflow",
+  "longDescription": "Kierr's plugin marketplace features a carefully selected set of plugins that extend Claude Code's capabilities. Each plugin is thoroughly tested, well-documented, and designed to solve specific development challenges. From documentation access to workflow automation, these plugins provide seamless integration with existing tools while maintaining high standards of security and performance.",
+
+  "homepage": "https://github.com/kierr/claude",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kierr/claude.git"
+  },
+
+  "license": "MIT",
+  "version": "1.0.0",
+
+  "keywords": [
+    "claude-code",
+    "plugins",
+    "productivity",
+    "development",
+    "automation",
+    "documentation",
+    "utilities"
+  ],
+
+  "categories": [
+    "Productivity",
+    "Development",
+    "Documentation",
+    "Utilities"
+  ],
+
+  "tags": {
+    "primary": ["claude-code", "productivity"],
+    "secondary": ["automation", "documentation", "utilities"],
+    "difficulty": ["beginner", "intermediate"],
+    "use-case": ["development", "learning", "automation"]
+  },
+
+  "metadata": {
+    "createdAt": "2025-01-01T00:00:00Z",
+    "updatedAt": "2025-01-05T00:00:00Z",
+    "totalDownloads": 5000,
+    "verified": true,
+    "featured": true,
+    "communityApproved": true
+  },
+
+  "support": {
+    "documentation": "https://github.com/kierr/claude#readme",
+    "community": "https://github.com/kierr/claude/discussions",
+    "issues": "https://github.com/kierr/claude/issues",
+    "email": "support@kierr.dev"
+  },
+
+  "plugins": [
+    {
+      "name": "docs",
+      "displayName": "Claude Code Documentation",
+      "version": "1.0.0",
+      "description": "Access official Claude Code documentation instantly with intelligent search and contextual help",
+      "longDescription": "The docs plugin provides seamless access to Claude Code's official documentation directly within your development environment. Features include intelligent search across all documentation, contextual suggestions based on your current work, quick access to common patterns and examples, and offline caching for frequently accessed content. Perfect for both beginners learning Claude Code and experienced developers needing quick reference.",
+
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@example.com",
+        "url": "https://github.com/kierr",
+        "organization": "Claude Code Community"
+      },
+
+      "license": "MIT",
+      "homepage": "https://github.com/kierr/claude-docs",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kierr/claude-docs.git"
+      },
+
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-docs"
+      },
+
+      "keywords": [
+        "claude-code",
+        "documentation",
+        "help",
+        "learning",
+        "reference",
+        "search",
+        "offline"
+      ],
+
+      "category": "Productivity",
+      "subcategory": "Documentation",
+
+      "tags": {
+        "primary": ["documentation", "claude-code"],
+        "secondary": ["help", "search", "reference"],
+        "stack": ["markdown", "typescript"],
+        "difficulty": "beginner",
+        "use-case": ["learning", "reference", "development"]
+      },
+
+      "components": {
+        "commands": [
+          {
+            "name": "docs-search",
+            "description": "Search Claude Code documentation",
+            "usage": "/docs-search <query>",
+            "examples": [
+              "/docs-search slash commands",
+              "/docs-search plugin development",
+              "/docs-search troubleshooting"
+            ],
+            "parameters": [
+              {
+                "name": "query",
+                "type": "string",
+                "description": "Search query",
+                "required": true
+              },
+              {
+                "name": "limit",
+                "type": "number",
+                "description": "Maximum number of results",
+                "required": false,
+                "default": 10
+              }
+            ]
+          },
+          {
+            "name": "docs-browse",
+            "description": "Browse documentation by topic",
+            "usage": "/docs-browse [topic]",
+            "examples": [
+              "/docs-browse",
+              "/docs-browse plugins",
+              "/docs-browse agents"
+            ]
+          },
+          {
+            "name": "docs-examples",
+            "description": "Show code examples and patterns",
+            "usage": "/docs-examples [pattern]",
+            "examples": [
+              "/docs-examples",
+              "/docs-examples prompt-engineering",
+              "/docs-examples debugging"
+            ]
+          },
+          {
+            "name": "docs-offline",
+            "description": "Manage offline documentation cache",
+            "usage": "/docs-offline [action]",
+            "examples": [
+              "/docs-offline download",
+              "/docs-offline clear",
+              "/docs-offline status"
+            ]
+          }
+        ]
+      },
+
+      "installation": {
+        "type": "automatic",
+        "steps": [
+          "Download documentation package",
+          "Index content for search",
+          "Configure caching preferences",
+          "Validate installation"
+        ],
+        "configuration": {
+          "required": [],
+          "optional": ["CACHE_SIZE", "AUTO_UPDATE", "OFFLINE_MODE"],
+          "environment": [".docs-config"]
+        }
+      },
+
+      "usage": {
+        "quickStart": "Install with /plugin install docs@kierr and run /docs-search to find any topic",
+        "commonScenarios": [
+          "Learning Claude Code features and commands",
+          "Finding best practices and patterns",
+          "Troubleshooting common issues",
+          "Discovering new capabilities",
+          "Accessing help while coding"
+        ],
+        "examples": [
+          {
+            "title": "Find Plugin Development Guide",
+            "command": "/docs-search plugin development guide",
+            "expectedOutput": "Comprehensive guide to creating Claude Code plugins"
+          },
+          {
+            "title": "Browse All Topics",
+            "command": "/docs-browse",
+            "expectedOutput": "Hierarchical list of all available documentation topics"
+          },
+          {
+            "title": "Get Code Examples",
+            "command": "/docs-examples file operations",
+            "expectedOutput": "Code examples showing best practices for file operations"
+          }
+        ]
+      },
+
+      "security": {
+        "permissions": ["network-access", "read-files"],
+        "privacy": "Cache documentation locally, no user data transmitted",
+        "sandbox": "Safe execution environment",
+        "verified": true
+      },
+
+      "support": {
+        "documentation": "https://github.com/kierr/claude-docs#readme",
+        "examples": "https://github.com/kierr/claude-docs/tree/main/examples",
+        "community": "https://github.com/kierr/claude-docs/discussions",
+        "issues": "https://github.com/kierr/claude-docs/issues"
+      },
+
+      "metadata": {
+        "createdAt": "2025-01-01T00:00:00Z",
+        "updatedAt": "2025-01-05T00:00:00Z",
+        "downloads": 1250,
+        "rating": 4.8,
+        "reviews": 42,
+        "verified": true,
+        "featured": false,
+        "beta": false,
+        "deprecated": false
+      }
+    },
+
+    {
+      "name": "memory",
+      "displayName": "Session Memory Manager",
+      "version": "2.1.0",
+      "description": "Track tool usage and extract session memories at configurable thresholds for enhanced context continuity",
+      "longDescription": "The memory plugin automatically monitors your Claude Code sessions, tracking tool usage patterns, conversation topics, and important decisions. It extracts and summarizes key information at configurable intervals, maintaining persistent memory across sessions. Features include automatic context compression, intelligent memory triggers, topic clustering, and seamless integration with your workflow. Essential for long-term projects and complex development sessions.",
+
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@example.com",
+        "url": "https://github.com/kierr",
+        "organization": "Claude Code Community"
+      },
+
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/kierr/claude-memory",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kierr/claude-memory.git"
+      },
+
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-memory"
+      },
+
+      "keywords": [
+        "memory",
+        "context",
+        "tracking",
+        "automation",
+        "persistence",
+        "continuity"
+      ],
+
+      "category": "Productivity",
+      "subcategory": "Automation",
+
+      "tags": {
+        "primary": ["memory", "automation"],
+        "secondary": ["context", "tracking", "persistence"],
+        "stack": ["typescript", "nodejs"],
+        "difficulty": "intermediate",
+        "use-case": ["long-term-projects", "complex-sessions", "context-management"]
+      },
+
+      "components": {
+        "commands": [
+          {
+            "name": "memory-status",
+            "description": "Show current memory status and statistics",
+            "usage": "/memory-status",
+            "examples": [
+              "/memory-status",
+              "/memory-status --detailed"
+            ]
+          },
+          {
+            "name": "memory-extract",
+            "description": "Manually extract session memories",
+            "usage": "/memory-extract [options]",
+            "examples": [
+              "/memory-extract",
+              "/memory-extract --since 2h",
+              "/memory-extract --topic architecture"
+            ]
+          },
+          {
+            "name": "memory-config",
+            "description": "Configure memory extraction settings",
+            "usage": "/memory-config [setting] [value]",
+            "examples": [
+              "/memory-config threshold 100",
+              "/memory-config auto-extract true",
+              "/memory-config show"
+            ]
+          },
+          {
+            "name": "memory-search",
+            "description": "Search through session memories",
+            "usage": "/memory-search <query>",
+            "examples": [
+              "/memory-search database schema",
+              "/memory-search --today api decisions",
+              "/memory-search --topic debugging"
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "name": "memory-analyzer",
+            "description": "AI agent for intelligent memory extraction and analysis",
+            "capabilities": [
+              "pattern-recognition",
+              "topic-clustering",
+              "importance-scoring",
+              "context-summarization"
+            ],
+            "model": "claude-sonnet-4-5",
+            "tools": ["read", "write", "bash", "grep"]
+          }
+        ]
+      },
+
+      "installation": {
+        "type": "automatic",
+        "steps": [
+          "Set up memory storage directory",
+          "Configure extraction thresholds",
+          "Initialize tracking system",
+          "Test memory extraction"
+        ],
+        "configuration": {
+          "required": ["MEMORY_DIR"],
+          "optional": ["EXTRACT_THRESHOLD", "MAX_MEMORY_SIZE", "AUTO_COMPRESS"],
+          "environment": [".env", "memory-config.json"]
+        }
+      },
+
+      "security": {
+        "permissions": ["read-files", "write-files", "file-access"],
+        "privacy": "All data stored locally, encrypted at rest",
+        "sandbox": "Restricted file system access",
+        "verified": true
+      },
+
+      "metadata": {
+        "createdAt": "2025-01-02T00:00:00Z",
+        "updatedAt": "2025-01-04T00:00:00Z",
+        "downloads": 890,
+        "rating": 4.6,
+        "reviews": 28,
+        "verified": true,
+        "featured": true,
+        "beta": false,
+        "deprecated": false
+      }
+    },
+
+    {
+      "name": "trunk",
+      "displayName": "Advanced Trunk Integration",
+      "version": "3.0.1",
+      "description": "Advanced Trunk integration for automated code quality, workflow automation, and CI/CD pipeline management",
+      "longDescription": "Supercharge your development workflow with advanced Trunk integration that goes beyond basic linting. This plugin provides intelligent code quality monitoring, automated fix suggestions, workflow orchestration, and seamless CI/CD pipeline integration. Features include real-time quality metrics, automated PR reviews, custom rule enforcement, performance monitoring, and team collaboration tools. Perfect for teams serious about code quality and development velocity.",
+
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@example.com",
+        "url": "https://github.com/kierr",
+        "organization": "Claude Code Community"
+      },
+
+      "license": "MIT",
+      "homepage": "https://github.com/kierr/claude-trunk",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kierr/claude-trunk.git"
+      },
+
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-trunk"
+      },
+
+      "keywords": [
+        "trunk",
+        "code-quality",
+        "linting",
+        "ci-cd",
+        "automation",
+        "workflow",
+        "testing"
+      ],
+
+      "category": "Development",
+      "subcategory": "Tools",
+
+      "tags": {
+        "primary": ["code-quality", "automation"],
+        "secondary": ["testing", "ci-cd", "workflow"],
+        "stack": ["typescript", "docker", "github-actions"],
+        "difficulty": "advanced",
+        "use-case": ["team-development", "quality-assurance", "automation"]
+      },
+
+      "dependencies": {
+        "system": [
+          "trunk >= 1.0.0",
+          "git",
+          "docker"
+        ],
+        "external": [
+          {
+            "name": "github-api",
+            "description": "GitHub API for PR integration",
+            "required": false
+          }
+        ]
+      },
+
+      "components": {
+        "commands": [
+          {
+            "name": "trunk-check",
+            "description": "Run comprehensive code quality checks",
+            "usage": "/trunk-check [options]",
+            "examples": [
+              "/trunk-check",
+              "/trunk-check --fix",
+              "/trunk-check --report json"
+            ]
+          },
+          {
+            "name": "trunk-setup",
+            "description": "Initialize Trunk configuration",
+            "usage": "/trunk-setup [template]",
+            "examples": [
+              "/trunk-setup",
+              "/trunk-setup --typescript",
+              "/trunk-setup --team"
+            ]
+          },
+          {
+            "name": "trunk-pr-review",
+            "description": "Automated PR review and analysis",
+            "usage": "/trunk-pr-review [pr-number]",
+            "examples": [
+              "/trunk-pr-review",
+              "/trunk-pr-review 123",
+              "/trunk-pr-review --detailed"
+            ]
+          },
+          {
+            "name": "trunk-monitor",
+            "description": "Monitor code quality metrics over time",
+            "usage": "/trunk-monitor [period]",
+            "examples": [
+              "/trunk-monitor",
+              "/trunk-monitor --week",
+              "/trunk-monitor --team"
+            ]
+          }
+        ],
+        "agents": [
+          {
+            "name": "quality-analyst",
+            "description": "Specialized agent for code quality analysis",
+            "capabilities": [
+              "static-analysis",
+              "security-audit",
+              "performance-analysis",
+              "maintainability-review"
+            ],
+            "model": "claude-sonnet-4-5",
+            "tools": ["bash", "read", "write", "grep", "trunk"]
+          }
+        ],
+        "mcpServers": [
+          {
+            "name": "trunk-mcp",
+            "description": "MCP server for advanced Trunk operations",
+            "command": "node",
+            "args": ["./trunk-mcp-server.js"],
+            "env": {
+              "TRUNK_API_TOKEN": "${TRUNK_TOKEN}"
+            }
+          }
+        ]
+      },
+
+      "installation": {
+        "type": "manual",
+        "steps": [
+          "Install Trunk CLI",
+          "Configure authentication",
+          "Set up project configuration",
+          "Configure CI/CD integration",
+          "Test installation"
+        ],
+        "configuration": {
+          "required": ["TRUNK_TOKEN"],
+          "optional": ["TEAM_ID", "GITHUB_TOKEN", "SLACK_WEBHOOK"],
+          "environment": [".env", ".trunk/config.yaml"]
+        }
+      },
+
+      "security": {
+        "permissions": ["network-access", "file-access", "system-access"],
+        "privacy": "Analyzes code locally, secure API communication",
+        "sandbox": "Isolated execution with controlled system access",
+        "verified": true
+      },
+
+      "metadata": {
+        "createdAt": "2025-01-03T00:00:00Z",
+        "updatedAt": "2025-01-05T00:00:00Z",
+        "downloads": 650,
+        "rating": 4.9,
+        "reviews": 31,
+        "verified": true,
+        "featured": true,
+        "beta": false,
+        "deprecated": false
+      }
+    },
+
+    {
+      "name": "fs-mv",
+      "displayName": "Smart File Movement",
+      "version": "1.2.0",
+      "description": "Configurable file movement plugin that automatically organizes files based on patterns and project structure",
+      "longDescription": "Intelligent file organization system that learns your project structure and automatically moves files to appropriate locations. Features include pattern-based rules, AI-powered file type detection, batch processing with undo support, project structure analysis, and integration with popular IDEs. Perfect for maintaining clean project organization and automating tedious file management tasks.",
+
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@example.com",
+        "url": "https://github.com/kierr",
+        "organization": "File Utilities Collective"
+      },
+
+      "license": "MIT",
+      "homepage": "https://github.com/kierr/fs-mv",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/kierr/fs-mv.git"
+      },
+
+      "source": {
+        "source": "github",
+        "repo": "kierr/fs-mv"
+      },
+
+      "keywords": [
+        "file-management",
+        "organization",
+        "automation",
+        "file-movement",
+        "patterns",
+        "project-structure"
+      ],
+
+      "category": "Utilities",
+      "subcategory": "File Management",
+
+      "tags": {
+        "primary": ["file-management", "organization"],
+        "secondary": ["automation", "patterns", "utilities"],
+        "stack": ["typescript", "nodejs"],
+        "difficulty": "beginner",
+        "use-case": ["project-organization", "file-automation", "cleanup"]
+      },
+
+      "components": {
+        "commands": [
+          {
+            "name": "fs-mv-organize",
+            "description": "Organize files based on configured rules",
+            "usage": "/fs-mv-organize [directory]",
+            "examples": [
+              "/fs-mv-organize",
+              "/fs-mv-organize src/",
+              "/fs-mv-organize --dry-run"
+            ]
+          },
+          {
+            "name": "fs-mv-rule",
+            "description": "Manage file organization rules",
+            "usage": "/fs-mv-rule [action] [rule]",
+            "examples": [
+              "/fs-mv-rule add *.js src/",
+              "/fs-mv-rule list",
+              "/fs-mv-rule remove test-*"
+            ]
+          },
+          {
+            "name": "fs-mv-preview",
+            "description": "Preview file movements before execution",
+            "usage": "/fs-mv-preview [directory]",
+            "examples": [
+              "/fs-mv-preview",
+              "/fs-mv-preview --verbose",
+              "/fs-mv-preview --output json"
+            ]
+          },
+          {
+            "name": "fs-mv-undo",
+            "description": "Undo the last file organization operation",
+            "usage": "/fs-mv-undo",
+            "examples": [
+              "/fs-mv-undo",
+              "/fs-mv-undo --list",
+              "/fs-mv-undo --restore 2"
+            ]
+          }
+        ]
+      },
+
+      "installation": {
+        "type": "automatic",
+        "steps": [
+          "Create configuration directory",
+          "Initialize default rules",
+          "Set up file tracking",
+          "Test with sample files"
+        ],
+        "configuration": {
+          "required": [],
+          "optional": ["RULES_FILE", "BACKUP_ENABLED", "DRY_RUN_DEFAULT"],
+          "environment": [".fs-mv.json"]
+        }
+      },
+
+      "security": {
+        "permissions": ["read-files", "write-files", "file-system"],
+        "privacy": "All file operations logged locally with undo capability",
+        "sandbox": "Restricted to configured directories",
+        "verified": true
+      },
+
+      "metadata": {
+        "createdAt": "2025-01-04T00:00:00Z",
+        "updatedAt": "2025-01-05T00:00:00Z",
+        "downloads": 420,
+        "rating": 4.5,
+        "reviews": 18,
+        "verified": true,
+        "featured": false,
+        "beta": false,
+        "deprecated": false
+      }
+    }
+  ],
+
+  "statistics": {
+    "totalPlugins": 4,
+    "totalDownloads": 3210,
+    "averageRating": 4.7,
+    "lastUpdated": "2025-01-05T00:00:00Z",
+    "categories": {
+      "Productivity": 2,
+      "Development": 1,
+      "Utilities": 1
+    },
+    "featured": 2,
+    "verified": 4
+  }
+}

@@ -29,12 +29,12 @@
       "description": "Advanced Trunk integration for automated code quality and workflow automation"
     },
     {
-      "name": "file-redirect",
+      "name": "fs-mv",
       "source": {
         "source": "github",
-        "repo": "kierr/claude-file-redirect"
+        "repo": "kierr/fs-mv"
       },
-      "description": "Configurable file redirection plugin - automatically redirects files based on patterns"
+      "description": "Configurable file movement plugin - automatically moves files based on patterns"
     }
   ]
 }
