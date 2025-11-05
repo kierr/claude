@@ -27,6 +27,14 @@
         "repo": "kierr/claude-trunk"
       },
       "description": "Advanced Trunk integration for automated code quality and workflow automation"
+    },
+    {
+      "name": "file-redirect",
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-file-redirect"
+      },
+      "description": "Configurable file redirection plugin - automatically redirects files based on patterns"
     }
   ]
 }

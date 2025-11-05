@@ -3,6 +3,11 @@
 ## Install
 
 ```bash
+/plugin marketplace add kierr/claude
+```
+
+Alternatively, add via URL:
+```bash
 /plugin marketplace add https://github.com/kierr/claude
 ```
 
