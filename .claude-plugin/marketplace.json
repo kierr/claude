@@ -49,8 +49,8 @@
       "version": "1.2.0",
       "description": "Configurable file movement plugin that automatically organizes files based on patterns and project structure. Perfect for maintaining clean project organization and automating tedious file management tasks.",
       "author": "Kierr",
-      "homepage": "https://github.com/kierr/fs-mv",
-      "repository": "https://github.com/kierr/fs-mv.git",
+      "homepage": "https://github.com/kierr/claude-fs-mv",
+      "repository": "https://github.com/kierr/claude-fs-mv.git",
       "license": "MIT",
       "keywords": ["file-management", "organization", "automation", "file-movement", "patterns", "project-structure"],
       "category": "Utilities"
