@@ -2,45 +2,143 @@
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "kierr",
   "owner": {
-    "name": "Kierr"
+    "name": "Kierr",
+    "email": "kierr@users.noreply.github.com",
+    "url": "https://github.com/kierr"
   },
   "description": "Curated collection of high-quality Claude Code plugins for enhanced productivity and development workflow",
+  "homepage": "https://github.com/kierr/claude",
+  "repository": "https://github.com/kierr/claude.git",
   "version": "1.0.0",
+  "license": "MIT",
   "plugins": [
     {
       "name": "docs",
-      "description": "Access official Claude Code documentation instantly with intelligent search and contextual help. Perfect for both beginners learning Claude Code and experienced developers needing quick reference.",
-      "source": "./claude-docs",
       "version": "1.0.0",
-      "category": "productivity"
+      "description": "Access official Claude Code documentation instantly with intelligent search and contextual help. Perfect for both beginners learning Claude Code and experienced developers needing quick reference.",
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@users.noreply.github.com",
+        "url": "https://github.com/kierr"
+      },
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-docs"
+      },
+      "homepage": "https://github.com/kierr/claude-docs",
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "documentation",
+        "help",
+        "learning",
+        "reference",
+        "search"
+      ],
+      "category": "Productivity"
     },
     {
       "name": "memory",
-      "description": "Track tool usage and extract session memories at configurable thresholds for enhanced context continuity. Essential for long-term projects and complex development sessions.",
-      "source": "./claude-memory",
       "version": "2.1.0",
-      "category": "productivity"
+      "description": "Track tool usage and extract session memories at configurable thresholds for enhanced context continuity. Essential for long-term projects and complex development sessions.",
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@users.noreply.github.com",
+        "url": "https://github.com/kierr"
+      },
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-memory"
+      },
+      "homepage": "https://github.com/kierr/claude-memory",
+      "license": "Apache-2.0",
+      "keywords": [
+        "memory",
+        "context",
+        "tracking",
+        "automation",
+        "persistence",
+        "continuity"
+      ],
+      "category": "Productivity"
     },
     {
       "name": "trunk",
-      "description": "Advanced Trunk integration for automated code quality, workflow automation, and CI/CD pipeline management. Perfect for teams serious about code quality and development velocity.",
-      "source": "./claude-trunk",
       "version": "3.0.1",
-      "category": "development"
+      "description": "Advanced Trunk integration for automated code quality, workflow automation, and CI/CD pipeline management. Perfect for teams serious about code quality and development velocity.",
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@users.noreply.github.com",
+        "url": "https://github.com/kierr"
+      },
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-trunk"
+      },
+      "homepage": "https://github.com/kierr/claude-trunk",
+      "license": "MIT",
+      "keywords": [
+        "trunk",
+        "code-quality",
+        "linting",
+        "ci-cd",
+        "automation",
+        "workflow",
+        "testing"
+      ],
+      "category": "Development"
     },
     {
       "name": "fs-mv",
-      "description": "Configurable file movement plugin that automatically organizes files based on patterns and project structure. Perfect for maintaining clean project organization and automating tedious file management tasks.",
-      "source": "./claude-fs-mv",
       "version": "1.2.0",
-      "category": "utilities"
+      "description": "Configurable file movement plugin that automatically organizes files based on patterns and project structure. Perfect for maintaining clean project organization and automating tedious file management tasks.",
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@users.noreply.github.com",
+        "url": "https://github.com/kierr"
+      },
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-fs-mv"
+      },
+      "homepage": "https://github.com/kierr/claude-fs-mv",
+      "license": "MIT",
+      "keywords": [
+        "file-management",
+        "organization",
+        "automation",
+        "file-movement",
+        "patterns",
+        "project-structure"
+      ],
+      "category": "Utilities"
     },
     {
       "name": "rules",
-      "description": "Intelligent rule interpolation system with Cursor-style MDC support, pattern matching, and security enforcement. Provides context-aware assistance with enterprise-grade performance optimization.",
-      "source": "./claude-rules",
       "version": "1.0.0",
-      "category": "development"
+      "description": "Intelligent rule interpolation system with Cursor-style MDC support, pattern matching, and security enforcement. Provides context-aware assistance with enterprise-grade performance optimization.",
+      "author": {
+        "name": "Kierr",
+        "email": "kierr@users.noreply.github.com",
+        "url": "https://github.com/kierr"
+      },
+      "source": {
+        "source": "github",
+        "repo": "kierr/claude-rules"
+      },
+      "homepage": "https://github.com/kierr/claude-rules",
+      "license": "MIT",
+      "keywords": [
+        "rules",
+        "cursor",
+        "mdc",
+        "pattern-matching",
+        "security",
+        "automation",
+        "context-aware",
+        "performance"
+      ],
+      "category": "Development"
     }
   ]
 }
